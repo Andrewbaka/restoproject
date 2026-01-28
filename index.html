@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="full-page">
+        <header>
+            <div class="above-header">
+                <span class="sale-text">Бесплатная доставка от 1 000 ₽</span>
+                <button class="sale-close-btn"><img src ="./images/icons/x-mark.svg" alt="кнопка закрыть"></button>
+            </div>
+            <div class="header-container">
+                <a href="#" class="logo">
+                    <img src="./images/icons/logo_black.svg" alt="лого в хэдере">
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#">Меню</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">События</a></li>
+                        <li><a href="#">Зоны доставки</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right-area">
+                    <div class="contacts">
+                        <a class="phone" href="tel:+01234567890">+0 (123) 456 78-90</a>
+                        <span class="working-time">Прием заказов с <time datetime="10:00">10:00</time> до <time datetime="22:40">22:40</time>
+                        </span>
+                    </div>
+                    <div class="icons">
+                        <button class="icon-btn">
+                            <svg width="56" height="48" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="profile-bg" d="M16 1H40C48.2843 1 55 7.71573 55 16V32C55 40.2843 48.2843 47 40 47H16C7.71573 47 1 40.2843 1 32V16C1 7.71573 7.71573 1 16 1Z" stroke="#1C1C1C" stroke-width="2"/>
+                                <path  class="profile-fill" fill-rule="evenodd" clip-rule="evenodd" d="M28 15.85C26.2603 15.85 24.85 17.2603 24.85 19C24.85 20.7397 26.2603 22.15 28 22.15C29.7397 22.15 31.15 20.7397 31.15 19C31.15 17.2603 29.7397 15.85 28 15.85ZM23.15 19C23.15 16.3214 25.3214 14.15 28 14.15C30.6786 14.15 32.85 16.3214 32.85 19C32.85 21.6786 30.6786 23.85 28 23.85C25.3214 23.85 23.15 21.6786 23.15 19ZM23.4304 27.7854C22.254 28.3736 21.85 29.0289 21.85 29.5C21.85 29.9711 22.254 30.6264 23.4304 31.2146C24.556 31.7774 26.1704 32.15 28 32.15C29.8297 32.15 31.4441 31.7774 32.5696 31.2146C33.746 30.6264 34.15 29.9711 34.15 29.5C34.15 29.0289 33.746 28.3736 32.5696 27.7854C31.4441 27.2226 29.8297 26.85 28 26.85C26.1704 26.85 24.556 27.2226 23.4304 27.7854ZM22.6701 26.2649C24.0781 25.5609 25.9637 25.15 28 25.15C30.0364 25.15 31.922 25.5609 33.3299 26.2649C34.687 26.9434 35.85 28.0381 35.85 29.5C35.85 30.9619 34.687 32.0566 33.3299 32.7351C31.922 33.4391 30.0364 33.85 28 33.85C25.9637 33.85 24.0781 33.4391 22.6701 32.7351C21.313 32.0566 20.15 30.9619 20.15 29.5C20.15 28.0381 21.313 26.9434 22.6701 26.2649Z" fill="#1C1C1C"/>
+                            </svg>      
+                        </button>
+                        <button class="icon-btn">
+                            <svg width="56" height="48" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="basket-bg" d="M0 16C0 7.16344 7.16344 0 16 0H40C48.8366 0 56 7.16344 56 16V32C56 40.8366 48.8366 48 40 48H16C7.16344 48 0 40.8366 0 32V16Z" fill="#1C1C1C"/>
+                                <path class="basket-fill" d="M36.0343 18.0577C35.8234 17.8045 35.5593 17.6009 35.2607 17.4613C34.9622 17.3217 34.6367 17.2495 34.3071 17.2499H22.1814L22.1499 16.9867C22.0855 16.4395 21.8225 15.935 21.4108 15.5688C20.9991 15.2027 20.4674 15.0003 19.9165 15H19.75C19.5511 15 19.3603 15.079 19.2197 15.2197C19.079 15.3603 19 15.5511 19 15.75C19 15.9489 19.079 16.1396 19.2197 16.2803C19.3603 16.4209 19.5511 16.5 19.75 16.5H19.9165C20.1002 16.5 20.2775 16.5674 20.4147 16.6895C20.552 16.8116 20.6397 16.9798 20.6612 17.1622L21.6932 25.937C21.8003 26.8495 22.2388 27.691 22.9253 28.3017C23.6119 28.9123 24.4988 29.2497 25.4176 29.2496H33.2496C33.4485 29.2496 33.6393 29.1706 33.78 29.03C33.9206 28.8893 33.9996 28.6986 33.9996 28.4997C33.9996 28.3008 33.9206 28.11 33.78 27.9693C33.6393 27.8287 33.4485 27.7497 33.2496 27.7497H25.4176C24.9534 27.7484 24.501 27.6035 24.1223 27.335C23.7437 27.0664 23.4574 26.6874 23.3026 26.2497H32.2424C33.1216 26.2498 33.9729 25.9409 34.6475 25.3771C35.3221 24.8132 35.7771 24.0303 35.9331 23.165L36.5218 19.8996C36.5806 19.5756 36.5674 19.2427 36.4831 18.9244C36.3989 18.6061 36.2457 18.3102 36.0343 18.0577ZM35.0496 19.6334L34.4601 22.8988C34.3665 23.4185 34.093 23.8888 33.6875 24.2272C33.2821 24.5656 32.7705 24.7506 32.2424 24.7498H23.0641L22.3584 18.7499H34.3071C34.4173 18.7492 34.5263 18.7729 34.6263 18.8191C34.7263 18.8653 34.8149 18.933 34.8857 19.0174C34.9566 19.1017 35.0081 19.2006 35.0364 19.3071C35.0647 19.4136 35.0692 19.525 35.0496 19.6334Z" fill="white"/>
+                                <path class="basket-fill" d="M24.25 33C25.0784 33 25.7499 32.3284 25.7499 31.5C25.7499 30.6716 25.0784 30.0001 24.25 30.0001C23.4216 30.0001 22.75 30.6716 22.75 31.5C22.75 32.3284 23.4216 33 24.25 33Z" fill="white"/>
+                                <path class="basket-fill" d="M31.7497 33C32.5781 33 33.2496 32.3284 33.2496 31.5C33.2496 30.6716 32.5781 30.0001 31.7497 30.0001C30.9212 30.0001 30.2497 30.6716 30.2497 31.5C30.2497 32.3284 30.9212 33 31.7497 33Z" fill="white"/>
+                            </svg>
+                        </button>   
+                    </div>
+                </div>    
+            </div>
+        </header>
+        <main class="general-content">
+            <h1 class="hidden-title">Resto App - Главная страница ресторана</h1>
+            <section class="section">
+                <h2 class="section-title">Меню</h2>
+                <ul class="section-grid">
+                    <li>
+                        <a href="#" class="menu-card">
+                            <img class="menu-card-img" src="./images/menu/Image_01.jpg" alt="Пицца">
+                            <span class="menu-card-title">Пицца</span>
+                        </a>
+                    </li>
+                    <li>    
+                        <a href="#" class="menu-card">
+                            <img class="menu-card-img" src="./images/menu/Image_02.png" alt="Супы">
+                            <span class="menu-card-title">Супы</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-card">
+                            <img class="menu-card-img" src="./images/menu/Image_03.jpg" alt="Горячие блюда">
+                            <span class="menu-card-title">Горячие блюда</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="menu-card">
+                            <img class="menu-card-img" src="./images/menu/Image_04.jpg" alt="Салаты">
+                            <span class="menu-card-title">Салаты</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2 class="section-title">Новинки</h2>
+                <ul class="section-grid">
+                    <li>
+                        <a href="#" class="food-card">
+                            <img class="food-card-img" src="./images/new_food/chinese_egg_soup.png" alt="Китайский яичный суп">
+                            <img class="food-card-img-sticker" src="./images/icons/vegetarian.png" alt="Вегетарианский">
+                            <div class="food-card-info">
+                                <h3 class="food-card-title">Китайский яичный суп</h3>
+                                <span class="food-card-description">Традиционный китайский суп с яйцом и томатами черри</span>
+                            </div>
+                        </a>
+                        <button class="price">350 ₽</button>
+                    </li>
+                    <li>
+                        <a href="#" class="food-card">
+                            <img class="food-card-img" src="./images/new_food/paella.png" alt="Паэлья">
+                            <img class="food-card-img-sticker" src="./images/icons/vegetarian.png" alt="Вегетарианский">
+                            <div class="food-card-info">
+                                <h3 class="food-card-title">Паэлья</h3>
+                                <span class="food-card-description">Традиционное испанское блюдо — рис, колбаски чоризо, куриное бедро, кальмар, кукуруза, горошек, специи</span>
+                            </div>
+                        </a>
+                        <button class="price">660 ₽</button>
+                    </li>
+                    <li>
+                        <a href="#" class="food-card">
+                            <img class="food-card-img" src="./images/new_food/boeuf_bourguignon.png" alt="Биф Бургеньон">
+                            <div class="food-card-info">
+                                <h3 class="food-card-title">Биф Бургеньон</h3>
+                                <span class="food-card-description">Блюдо французской кухни — тушёные кусочки говядины с картофелем и болгарским перцем</span>
+                            </div>
+                        </a>
+                        <button class="price">630 ₽</button>
+                    </li>
+                    <li>
+                        <a href="#" class="food-card">
+                            <img class="food-card-img" src="./images/new_food/smashed_cucumbers.png" alt="Битые огурцы">
+                            <img class="food-card-img-sticker" src="./images/icons/vegetarian.png" alt="Вегетарианский">
+                            <div class="food-card-info">
+                                <h3 class="food-card-title">Битые огурцы</h3>
+                                <span class="food-card-description">Салат из свежих битых огурцов с уйгурским соусом, кешью и кунжутом</span>
+                            </div>
+                        </a>
+                        <button class="price">320 ₽</button>
+                    </li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2 class="section-title">Популярное</h2>
+                <ul class="section-grid">
+                    <li>
+                        <a href="#" class="food-card">
+                            <img class="food-card-img" src="./images/popular/pepperoni.png" alt="Пепперони">
+                            <div class="food-card-info">
+                                <h3 class="food-card-title">Пепперони</h3>
+                                <span class="food-card-description">Просто и вкусно - томатная основа маринара, колбаски пепперони и сыр моцарелла</span>
+                            </div>
+                        </a>
+                        <button class="price">660 ₽</button>
+                    </li>
+                    <li>
+                        <a href="#" class="food-card">
+                            <img class="food-card-img" src="./images/popular/pear_gorgonzola.png" alt="Груша Горгонзола">
+                            <img class="food-card-img-sticker" src="./images/icons/vegetarian.png" alt="Вегетарианский">
+                            <div class="food-card-info">
+                                <h3 class="food-card-title">Груша Горгонзола</h3>
+                                <span class="food-card-description">Нежная пицца на основе сливочного соуса с сыром горгондзола, грушей, медом и кедровыми орехами</span>
+                            </div>
+                        </a>
+                        <button class="price">780 ₽</button>
+                    </li>
+                    <li>
+                        <a href="#" class="food-card">
+                            <img class="food-card-img" src="./images/popular/fo_bo.png" alt="Фо Бо">
+                            <div class="food-card-info">
+                                <h3 class="food-card-title">Фо Бо</h3>
+                                <span class="food-card-description">Вьетнамский суп с рисовой лапшой, в котором используется говядина, свежая зелень и ростки сои. Подают с добавками, такими как мята, долька лайма, острый соус шрирача, азиатский уксус и лаоганма</span>
+                            </div>
+                        </a>
+                        <button class="price">490 ₽</button>
+                    </li>
+                    <li>
+                        <a href="#" class="food-card">
+                            <img class="food-card-img" src="./images/popular/tom_yum_seafood.png" alt="Том Ям с морепродуктами">
+                            <img class="food-card-img-sticker" src="./images/icons/seafood.png" alt="Морепродукты">
+                            <img class="food-card-img-sticker-2" src="./images/icons/hot.png" alt="Острое">
+                            <div class="food-card-info">
+                                <h3 class="food-card-title">Том Ям с морепродуктами</h3>
+                                <span class="food-card-description">Традиционный тайский суп, на основе кокосового молока и сливок, с добавлением креветок, кальмаров, грибов шиитаке и шампиньонов, помидоров черри и свежей зелени. Подается с паровым тайским рисом</span>
+                            </div>
+                        </a>
+                        <button class="price">590 ₽</button>
+                    </li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2 class="section-title">Акции</h2>
+                <ul class="section-grid">
+                    <li>
+                        <a href="#" class="promo-card">
+                            <img class="promo-card-img" src="./images/promo/promo_status.png" alt="Статус «Platina» привилегированным клиентам">
+                            <div class="promo-card-discount">
+                                <span class="promo-card-text">Скидка 10%</span>
+                            </div>
+                            <h3 class="promo-card-title">Статус «Platina»<br> привилегированным клиентам</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="promo-card">
+                            <img class="promo-card-img" src="./images/promo/promo_registration.png" alt="Скидка на все покупки при регистрации">
+                            <div class="promo-card-discount">
+                                <span class="promo-card-text">Скидка 5%</span>
+                            </div>
+                            <h3 class="promo-card-title">Скидка на все покупки<br>при регистрации</h3>
+                        </a>
+                    </li>
+                </ul>   
+            </section>
+            <section class="section">
+                <h2 class="section-title">События</h2>
+                <ul class="section-grid">
+                    <li>
+                        <a href="#" class="event-card">
+                            <img class="event-card-img" src="./images/events/standup.png" alt="Первый в этом году Stand-Up">
+                            <div class="event-card-date">
+                                <span class="event-date-text">27 января</span>
+                            </div>
+                            <div class="event-card-time">
+                                <span class="event-date-text">В 21:00</span>
+                            </div>
+                            <div class="event-card-status-1">
+                                <span class="event-status-text-1">Скоро</span>
+                            </div>
+                            <h3 class="event-card-title">Первый в этом году Stand-Up</h3>
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="event-card">
+                            <img class="event-card-img" src="./images/events/birthday.png" alt="День рождения в «Гастроцех»">
+                            <div class="event-card-discount">
+                                <span class="event-card-text">Скидка 20%</span>
+                            </div>
+                            <div class="event-card-date">
+                                <span class="event-date-text">21 января</span>
+                            </div>
+                            <div class="event-card-status-2">
+                                <span class="event-status-text-2">Завершено</span>
+                            </div>
+                            <h3 class="event-card-title">День рождения в «Гастроцех»</h3>
+                        </a>
+                    </li>
+                </ul> 
+                <button class="all-events">Все события</button>  
+            </section>
+            <section class="section">
+                <h2 class="section-title">Наши заведения</h2>
+                <ul class="section-grid">
+                    <li>
+                        <a href="#" class="places-card">
+                            <img class="places-card-img" src="./images/our_places/gastroshop_foodcourt.png" alt="Статус «Platina» привилегированным клиентам">
+                            <div class="places-card-date">
+                                <span class="places-date-text">Открыт еще 1 ч 20 мин</span>
+                            </div>
+                            <div class="places-card-time">
+                                <span class="places-date-text">с 10:00 до 23:00</span>
+                            </div>
+                            <div class="places-card-status-1">
+                                <span class="places-status-text-1">Открыт</span>
+                            </div>
+                            <h3 class="places-card-title">Фудкорт — Кафе «Гастроцех»</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="promo-card">
+                            <img class="places-card-img" src="./images/our_places/gastroshop_pizza.png" alt="Скидка на все покупки при регистрации">
+                            <div class="places-card-date">
+                                <span class="places-date-text">Открыт еще 1 ч 20 мин</span>
+                            </div>
+                            <div class="places-card-time">
+                                <span class="places-date-text">с 10:00 до 23:00</span>
+                            </div>
+                            <div class="places-card-status-1">
+                                <span class="places-status-text-1">Открыт</span>
+                            </div>
+                            <h3 class="places-card-title">«Гастроцех» Пицца</h3>
+                        </a>
+                    </li>
+                </ul>   
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <div class="left-contacts">
+                        <a class="phone-footer" href="tel:+01234567890">+0 (123) 456 78-90</a>
+                        <span class="working-time-footer">Прием заказов с <time datetime="10:00">10:00</time> до <time datetime="22:40">22:40</time>
+                        </span>
+                    </div>
+                    <div class="right-contacts">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="footer-social">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 8C0 3.58172 3.58172 0 8 0H32C36.4183 0 40 3.58172 40 8V32C40 36.4183 36.4183 40 32 40H8C3.58172 40 0 36.4183 0 32V8Z" fill="#393939"/>
+                                <path class="fill" d="M27.4654 12.1324C27.4654 12.1324 29.1306 11.4831 28.9918 13.06C28.9455 13.7093 28.5293 15.9818 28.2055 18.4398L27.0954 25.7211C27.0954 25.7211 27.0029 26.7878 26.1703 26.9733C25.3377 27.1588 24.0889 26.324 23.8576 26.1385C23.6726 25.9994 20.3886 23.9124 19.2323 22.8921C18.9085 22.6138 18.5384 22.0572 19.2785 21.408L24.1352 16.7702C24.6902 16.2137 25.2453 14.9151 22.9326 16.4919L16.457 20.8978C16.457 20.8978 15.717 21.3616 14.3294 20.9442L11.3229 20.0166C11.3229 20.0166 10.2128 19.321 12.1092 18.6253C16.7346 16.4455 22.4238 14.2194 27.4654 12.1324Z" fill="#A6A6A6"/>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="footer-social">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 8C0 3.58172 3.58172 0 8 0H32C36.4183 0 40 3.58172 40 8V32C40 36.4183 36.4183 40 32 40H8C3.58172 40 0 36.4183 0 32V8Z" fill="#393939"/>
+                                <path class="fill" d="M22.1106 19.5955C21.7449 19.4579 21.7449 18.9328 21.7222 18.5671C21.6308 17.2644 22.0879 15.2757 21.5394 14.4302C21.151 13.9269 19.2764 13.973 18.1339 14.0418C17.8135 14.0879 17.4251 14.1559 17.1509 14.2934C16.8766 14.4309 16.6023 14.6591 16.6023 14.8646C16.6023 15.1616 17.2884 15.1162 17.5392 15.5046C17.8135 15.9164 17.8135 16.8073 17.8135 17.5387C17.8135 18.3842 17.676 19.5048 17.3337 19.5501C16.8078 19.5728 16.5109 19.0469 16.2366 18.6585C15.688 17.9044 15.1394 16.9667 14.7277 16.0525C14.5221 15.5726 14.4073 15.0468 14.1103 14.8412C13.6532 14.5209 12.8304 14.4982 12.0302 14.5209C11.2988 14.5435 10.247 14.4521 10.0415 14.8866C9.88127 15.3664 10.2243 15.8235 10.4072 16.2126C11.3441 18.2467 12.3498 20.0299 13.5845 21.721C14.7277 23.2979 15.8014 24.5552 17.9042 25.2179C18.4989 25.4007 21.1042 25.9266 21.6301 25.2179C21.8129 24.9436 21.7676 24.3263 21.859 23.8691C21.9504 23.412 22.0645 22.9549 22.499 22.9322C22.8647 22.9095 23.0702 23.2291 23.2992 23.4581C23.5508 23.7097 23.7563 23.9152 23.9392 24.1441C24.3736 24.5786 24.8308 25.1725 25.3793 25.4015C26.1334 25.7218 27.2993 25.6304 28.3964 25.5843C29.288 25.5616 29.928 25.3788 29.9968 24.8529C30.0429 24.4411 29.585 23.8472 29.3107 23.5042C28.6246 22.6586 28.305 22.407 27.5275 21.6295C27.1845 21.2865 26.75 20.9208 26.75 20.5097C26.7273 20.2581 26.9329 20.0299 27.1157 19.7783C27.9159 18.5897 28.7161 17.7442 29.4475 16.5096C29.653 16.1439 30.1335 15.2984 29.9507 14.8866C29.7452 14.4294 28.602 14.5662 27.8932 14.5662C26.9789 14.5662 25.7904 14.4975 25.5614 14.6803C25.127 14.9773 24.9441 15.4578 24.7386 15.9149C24.2815 16.9667 23.6641 18.0405 23.0241 18.8406C22.7952 19.1149 22.3615 19.6861 22.1099 19.5947L22.1106 19.5955Z" fill="#A6A6A6"/>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="footer-social">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 8C0 3.58172 3.58172 0 8 0H32C36.4183 0 40 3.58172 40 8V32C40 36.4183 36.4183 40 32 40H8C3.58172 40 0 36.4183 0 32V8Z" fill="#393939"/>
+                                <path class="fill" d="M20.375 10C15.1875 10 11 14.1875 11 19.375C11 21.5 11.6875 23.5 13 25.125L11.6875 29.125C11.625 29.375 11.6875 29.625 11.875 29.8125C11.9375 29.9375 12.125 30 12.25 30C12.3125 30 12.4375 30 12.5 29.9375L16.8125 28C17.9375 28.5 19.125 28.75 20.375 28.75C25.5625 28.75 29.75 24.5625 29.75 19.375C29.75 14.1875 25.5625 10 20.375 10ZM25.8125 22.8125C25.5625 23.5625 24.625 24.1875 23.8125 24.3125C23.625 24.375 23.4375 24.375 23.1875 24.375C22.6875 24.375 21.9375 24.25 20.625 23.6875C19.125 23.0625 17.625 21.75 16.4375 20.0625V20C16.0625 19.4375 15.375 18.375 15.375 17.25C15.375 15.875 16.0625 15.1875 16.3125 14.875C16.625 14.5625 17.0625 14.375 17.5625 14.375C17.6875 14.375 17.75 14.375 17.875 14.375C18.3125 14.375 18.625 14.5 18.9375 15.125L19.1875 15.625C19.375 16.125 19.625 16.6875 19.6875 16.75C19.875 17.125 19.875 17.4375 19.6875 17.75C19.625 17.9375 19.5 18.0625 19.375 18.1875C19.3125 18.3125 19.25 18.375 19.1875 18.375C19.125 18.4375 19.125 18.4375 19.0625 18.5C19.25 18.8125 19.625 19.375 20.125 19.8125C20.875 20.5 21.4375 20.6875 21.75 20.8125C21.875 20.6875 22 20.4375 22.1875 20.25L22.25 20.125C22.5625 19.6875 23.0625 19.5625 23.5625 19.75C23.8125 19.875 25.1875 20.5 25.1875 20.5L25.3125 20.5625C25.5 20.6875 25.75 20.75 25.875 21C26.125 21.5625 25.9375 22.375 25.8125 22.8125Z" fill="#A6A6A6"/>
+                            </svg>
+                        </a>
+                    </div>   
+                </div>
+                <div class="footer-section">
+                   <div class="footer-logo-container">
+                        <a href="#" class="footer-logo">
+                            <img src="./images/icons/logo_white.svg" alt="лого футер">
+                        </a>
+                   </div>
+                   <nav class="footer-nav">
+                        <ul class="footer-nav-list">
+                            <li><a href="#">Меню</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">События</a></li>
+                            <li><a href="#">Зоны доставки</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-apps-container">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="footer-app">
+                            <img src="./images/app/app_store.svg" alt="приложение для иос">
+                            <img src="./images/app/app_store_hover.svg">
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="footer-app">
+                            <img src="./images/app/google_play.svg" alt="приложение для андроид">
+                            <img src="./images/app/google_play_hover.png">
+                        </a>
+                    </div> 
+                </div>
+                <div class="footer-section">
+                    <span class="copyright">Copyright 2024</span>
+                    <div class="footer-documents">
+                        <a href="#" class="document">Условия оплаты, получения и возврата</a>
+                        <a href="#" class="document">Политика обработки персональных данных</a>
+                        <a href="#" class="document">Согласие на обработку персональных данных</a>
+                    </div>
+                    <div class="payment-methods">
+                        <img src="images/payment_methods/visa.svg" alt="виза">
+                        <img src="images/payment_methods/mastercard.svg" alt="мастеркард">
+                        <img src="images/payment_methods/mir.svg" alt="мир">
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <hr class="footer-separator">
+                </div>
+                <div class="footer-section footer-section--centered">
+                    <span class="underline-text">
+                        Проект выполнен в рамках стажировки <a class="preax" href="https://preax.ru" target="_blank" rel="noopener noreferrer">PREAX</a>
+                    </span>
+                </div> 
+            </div>
+        </footer>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
